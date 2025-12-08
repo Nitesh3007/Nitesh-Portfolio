@@ -1,6 +1,5 @@
 export const UI = {
   navbar: {
-    logo: "/logo.jpg",
     title: "Nitesh Patel",
     navItems: [{ title: "Home", link: "#home" }],
     action: {
@@ -33,7 +32,7 @@ export const UI = {
       title: "the grind starts paying off",
       subtitle: "Homelane",
       description:
-        "what didn't i try? photoshop, video editing, app development, backend—but web development always had my heart. deep down, i wanted to be a frontend dev, and web seemed like the way to go.\n\nafter countless applications, i joined homelane. funnily enough, i didn't end up as a web dev but as an app dev. little did i know, this experience would lay the foundation for my journey in tech and shape the skills i rely on today.",
+        "what didn't i try? photoshop, video editing, app development, backend—but web development always had my heart. deep down, i wanted to be a frontend dev, and web seemed like the way to go.\n\nafter countless applications, i joined homelane. little did i know, this experience would lay the foundation for my journey in tech and shape the skills i rely on today.",
     },
     {
       year: "25'",
@@ -49,12 +48,12 @@ export const UI = {
       description:
         "honestly, college didn't give me much academically—but the people i met made it unforgettable. those crazy, stubborn, brilliant folks are some of the most trusted friends and mentors i'll ever have. #brothers #mentors",
     },
-    {
-      year: "25'",
-      title: "what’s next?",
-      subtitle: "Onwards and upwards",
-      description:
-        "the journey so far has been wild. at CRED, i started exploring backend, which eventually made me a full-stack developer. but problem-solving? that’s always been in my blood. figuring things out, tackling challenges, and building solutions from scratch—it’s what drives me.\n\nthe goal now is simple: keep learning, keep building, and keep pushing boundaries. bigger problems, smarter solutions, and more impact. the obsession to explore and create doesn’t stop—it only grows stronger. 🚀",
-    },
+  {
+  year: "25'",
+  title: "what’s next?",
+  subtitle: "Onwards and upwards",
+  description:
+    "the journey so far has been wild. exploring backend eventually shaped me into a full-stack developer. but problem-solving? that’s always been in my blood. figuring things out, tackling challenges, and building solutions from scratch—it’s what drives me.\n\nthe goal now is simple: keep learning, keep building, and keep pushing boundaries. bigger problems, smarter solutions, and more impact. the obsession to explore and create doesn’t stop—it only grows stronger. 🚀",
+}
   ],
 };

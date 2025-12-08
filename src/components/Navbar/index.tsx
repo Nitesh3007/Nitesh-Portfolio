@@ -16,6 +16,13 @@ export const Navbar: React.FC<NavbarProps> = ({ template }) => {
     );
   };
 
+  const handleProjectsClick = () => {
+    const projectsSection = document.getElementById("projects-section");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 w-full bg-black/95 backdrop-blur-md z-50 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({ template }) => {
           </div>
 
           {/* Resume Download Button */}
-          <div>
+          <div className="flex gap-4">
             <button
               onClick={handleResumeDownload}
               className="bg-white flex items-center justify-center gap-2 text-black hover:bg-gray-200 px-3 py-1 rounded-full transition-all duration-200 transform hover:scale-105 shadow-lg group"
@@ -61,6 +68,29 @@ export const Navbar: React.FC<NavbarProps> = ({ template }) => {
                 />
               </svg>
               {action.title}
+            </button>
+
+            {/* Projects Button */}
+            <button
+              onClick={handleProjectsClick}
+              className="bg-white flex items-center justify-center gap-2 text-black hover:bg-gray-200 px-3 py-1 rounded-full transition-all duration-200 transform hover:scale-105 shadow-lg group"
+              title="View Projects"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 3v11.25m0 0L9 8.25m-5.25 6L9 15.75M21 3v11.25m0 0L15.75 8.25m5.25 6L15.75 15.75"
+                />
+              </svg>
+              Projects
             </button>
           </div>
         </div>
