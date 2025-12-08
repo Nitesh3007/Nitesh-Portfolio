@@ -1,5 +1,3 @@
-import React from "react";
-
 const projectsData = [
   {
     id: "proj_aeiou_001",
