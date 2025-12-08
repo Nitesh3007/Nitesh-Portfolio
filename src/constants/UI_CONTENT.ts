@@ -1,5 +1,6 @@
 export const UI = {
   navbar: {
+    logo: "/logo.png",
     title: "Nitesh Patel",
     navItems: [{ title: "Home", link: "#home" }],
     action: {
