@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
 
             {/* Instagram */}
             <a 
-              href="https://www.instagram.com/notniteshpatell/"
+              href="https://www.instagram.com/sparkinnn21/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200 group"

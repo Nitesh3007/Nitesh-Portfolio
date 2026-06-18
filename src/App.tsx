@@ -4,7 +4,6 @@ import { Timeline } from "./components/Timeline";
 import { UI } from "./constants/UI_CONTENT";
 import { useEffect } from "react";
 import { Footer } from "./components/Footer";
-import Projects from "./components/Projects";
 
 function App() {
   const { navbar } = UI;
@@ -56,7 +55,6 @@ function App() {
       <main>
         <Home />
         <Timeline />
-        <Projects />
       </main>
       <Footer />
     </div>

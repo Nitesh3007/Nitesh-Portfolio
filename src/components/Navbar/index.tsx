@@ -8,19 +8,15 @@ type NavbarProps = {
 export const Navbar: React.FC<NavbarProps> = ({ template }) => {
   const { action, logo, title } = template;
 
+  // Hidden for now — set to true to show the resume button again
+  const showResume = false;
+
   const handleResumeDownload = () => {
     window.open(
       "https://drive.google.com/file/d/1_yXIwUdlHtEr-9jrCtWYNtJZ6wkMoM44/view?usp=drivesdk"
 ,
       "_blank"
     );
-  };
-
-  const handleProjectsClick = () => {
-    const projectsSection = document.getElementById("projects-section");
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   return (
@@ -39,7 +35,7 @@ export const Navbar: React.FC<NavbarProps> = ({ template }) => {
             <h1 className="text-xl sm:text-md font-bold text-white">{title}</h1>
           </div>
 
-          {/* Resume Download Button */}
+          {showResume && (
           <div className="flex gap-4">
             <button
               onClick={handleResumeDownload}
@@ -69,30 +65,8 @@ export const Navbar: React.FC<NavbarProps> = ({ template }) => {
               </svg>
               {action.title}
             </button>
-
-            {/* Projects Button */}
-            <button
-              onClick={handleProjectsClick}
-              className="bg-white flex items-center justify-center gap-2 text-black hover:bg-gray-200 px-3 py-1 rounded-full transition-all duration-200 transform hover:scale-105 shadow-lg group"
-              title="View Projects"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 3v11.25m0 0L9 8.25m-5.25 6L9 15.75M21 3v11.25m0 0L15.75 8.25m5.25 6L15.75 15.75"
-                />
-              </svg>
-              Projects
-            </button>
           </div>
+          )}
         </div>
       </div>
     </nav>
